@@ -7,7 +7,7 @@ variable "cluster_name" {
 variable "vpc_id" {
   description = "ID of the VPC where the cluster is created"
   type        = string
-  default = "vpc-06774b48185afd13e"
+  default     = "vpc-06774b48185afd13e"
 }
 
 variable "region" {
