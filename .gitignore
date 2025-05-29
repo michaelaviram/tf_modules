@@ -1,0 +1,10 @@
+# === Terraform files ===
+*.tfstate
+*.tfstate.backup
+*.tfplan
+
+# Terraform CLI cache
+.terraform/
+.terraform.lock.hcl
+
+
