@@ -37,8 +37,8 @@ resource "null_resource" "k8s_config" {
   provisioner "local-exec" {
     command = "aws eks update-kubeconfig --region $REGION --name $CLUSTER"
     environment = {
-        REGION = var.region
-        CLUSTER = var.cluster_name
+      REGION  = var.region
+      CLUSTER = var.cluster_name
     }
   }
   depends_on = [module.eks]
