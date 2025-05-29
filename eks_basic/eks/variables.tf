@@ -42,5 +42,22 @@ variable "subnet_ids" {
 
 variable "instance_types" {
   type    = list(string)
-  default = ["t2.micro"]
+  default = ["t3.small"]
 }
+
+variable "min_nodes" {
+  type = number
+  default = 1
+}
+
+variable "max_nodes" {
+  type = number
+  default = 3
+}
+
+variable "desired_nodes" {
+  type = number
+  default = 2
+}
+
+

@@ -21,9 +21,9 @@ module "eks" {
 
       instance_types = var.instance_types
 
-      min_size     = 1
-      max_size     = 2
-      desired_size = 2
+      min_size     = var.min_nodes
+      max_size     = var.max_nodes
+      desired_size = var.desired_nodes
     }
   }
 
